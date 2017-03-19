@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+  </head>
+<body>
+  {%if error%}
+    {{error}}<br>
+  {%else%}
+    <h1>Here is your profile:</h1>
+    <p>Name: {{name}}</p>
+    <p>Age: {{age}}</p>
+    <p>Favourate Ninja: {{ninja}}</p>
+  {%endif%}
+  <form action="/">
+    <input type="submit" value="Go Back">
+  </form>
+</body>
+</html>
